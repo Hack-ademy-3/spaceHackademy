@@ -1,0 +1,89 @@
+body {
+  background-color: black;
+  font-family: 'Electrolize', sans-serif;
+}
+
+h1, h2, h3, .h1, .h2, .h3{
+  font-family: 'Orbitron';
+}
+
+:root {
+  --main-color: #086fce;
+  --accent-color: #021F4B;
+}
+
+.text-main{
+  color: var(--main-color);
+}
+
+.text-accent{
+  color: var(--accent-color);
+}
+
+.bg-main{
+  background: var(--main-color);
+}
+
+.bg-accent{
+  background-color: var(--accent-color);
+}
+
+.bordoNavbar{
+  border-bottom: 2px solid white;
+  background-color: black;
+
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background:linear-gradient(black 15%, transparent, black),  url('./media/alfonsonasa.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.arrow{
+  left: 50%;
+  bottom: 10%;
+}
+
+@media screen and (max-width: 567px) {
+  .arrow{
+    left: 48%;
+    bottom: 0%;
+  }
+} 
+
+.bordo-card{
+  border-bottom: 2px solid var(--main-color);
+}
+
+.btn-custum{
+  background: 
+  linear-gradient(to right, var(--main-color) 2px, transparent 2px) 0 0,
+  linear-gradient(to right, var(--main-color) 2px, transparent 2px) 0 100%,
+  linear-gradient(to left, var(--main-color) 2px, transparent 2px) 100% 0,
+  linear-gradient(to left, var(--main-color) 2px, transparent 2px) 100% 100%, 
+  linear-gradient(to bottom, var(--main-color) 2px, transparent 2px) 0 0,
+  linear-gradient(to bottom, var(--main-color) 2px, transparent 2px) 100% 0,
+  linear-gradient(to top, var(--main-color) 2px, transparent 2px) 0 100%,
+  linear-gradient(to top, var(--main-color) 2px, transparent 2px) 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 10px 10px;
+}
+
+
+.btn-custum:hover{
+  letter-spacing: 3px;
+}
+
+.spacefooter{ 
+    height: 50vh;
+    min-height: 500px;
+    background:linear-gradient(black, transparent, black 80%),  url('./media/footer.jpg');
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+}
+
